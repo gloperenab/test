@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.stage.*?>
+
+<Stage xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ejercicio2.app.FXMLController">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="400" prefWidth="600">
+            <children>
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="73.0" stroke="#ffffff00" strokeType="INSIDE" width="601.0" />
+               <Label layoutX="25.0" layoutY="20.0" text="Carga de archivos XLSX y TXT">
+                  <font>
+                     <Font name="System Bold" size="26.0" />
+                  </font>
+               </Label>
+               <Label layoutX="40.0" layoutY="123.0" prefHeight="30.0" prefWidth="188.0" text="Cargar Profesores">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Label>
+                <Label layoutX="40.0" layoutY="173.0" prefHeight="34.0" prefWidth="188.0" text="Cargar Materias">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="40.0" layoutY="223.0" prefHeight="34.0" prefWidth="188.0" text="Cargar Disponibilidad">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="40.0" layoutY="273.0" prefHeight="34.0" prefWidth="188.0" text="Cargar Ponderación">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+               <Separator layoutX="214.0" layoutY="73.0" orientation="VERTICAL" prefHeight="328.0" prefWidth="1.0" />
+               <Separator layoutX="519.0" layoutY="72.0" orientation="VERTICAL" prefHeight="328.0" prefWidth="6.0" />
+               <Separator layoutY="72.0" prefHeight="5.0" prefWidth="600.0" />
+               <Separator layoutY="115.0" prefHeight="0.0" prefWidth="600.0" />
+               <Separator layoutY="165.0" prefHeight="0.0" prefWidth="600.0" />
+               <Separator layoutY="214.0" prefHeight="0.0" prefWidth="601.0" />
+               <Separator layoutY="262.0" prefHeight="5.0" prefWidth="599.0" />
+               <Separator layoutX="-4.0" layoutY="316.0" prefHeight="4.0" prefWidth="604.0" />
+               <Separator layoutX="435.0" layoutY="73.0" orientation="VERTICAL" prefHeight="326.0" prefWidth="4.0" />
+               <ImageView fx:id="excel_prof" fitHeight="40.0" fitWidth="45.0" layoutX="265.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@imagenes/excel_icon.png" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="txt_prof" fitHeight="34.0" fitWidth="33.0" layoutX="350.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@imagenes/txt_icon.png" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="excel_mat" fitHeight="40.0" fitWidth="45.0" layoutX="265.0" layoutY="170.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@imagenes/excel_icon.png" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="txt_mat" fitHeight="34.0" fitWidth="33.0" layoutX="350.0" layoutY="174.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@imagenes/txt_icon.png" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="excel_disp" fitHeight="40.0" fitWidth="45.0" layoutX="265.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@imagenes/excel_icon.png" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="txt_disp" fitHeight="34.0" fitWidth="33.0" layoutX="350.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@imagenes/txt_icon.png" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="excel_pond" fitHeight="40.0" fitWidth="45.0" layoutX="265.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@imagenes/excel_icon.png" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="txt_pond" fitHeight="34.0" fitWidth="33.0" layoutX="350.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@imagenes/txt_icon.png" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="vis_prof" fitHeight="41.0" fitWidth="48.0" layoutX="540.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@imagenes/visualizar_icon.png" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="ver_mat" fitHeight="41.0" fitWidth="48.0" layoutX="540.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@imagenes/visualizar_icon.png" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="vis_disp" fitHeight="41.0" fitWidth="48.0" layoutX="540.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@imagenes/visualizar_icon.png" />
+                  </image>
+               </ImageView>
+               <ImageView fx:id="vis_pond" fitHeight="41.0" fitWidth="48.0" layoutX="540.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@imagenes/visualizar_icon.png" />
+                  </image>
+               </ImageView>
+               <Label alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" layoutX="229.0" layoutY="85.0" prefHeight="17.0" prefWidth="193.0" text="Cargar">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Label>
+               <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="449.0" layoutY="84.0" prefHeight="21.0" prefWidth="59.0" text="Estado">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Label>
+               <Button fx:id="excel_profB" layoutX="257.0" layoutY="117.0" mnemonicParsing="false" onAction="#excel_prof" opacity="0.0" prefHeight="46.0" prefWidth="52.0" />
+               <Button fx:id="excel_matB" layoutX="259.0" layoutY="167.0" mnemonicParsing="false" onAction="#excel_mat" opacity="0.0" prefHeight="46.0" prefWidth="52.0" />
+               <Button fx:id="excel_dispB" layoutX="257.0" layoutY="217.0" mnemonicParsing="false" onAction="#excel_disp" opacity="0.0" prefHeight="46.0" prefWidth="52.0" />
+               <Button fx:id="excel_pondB" layoutX="257.0" layoutY="268.0" mnemonicParsing="false" onAction="#excel_pond" opacity="0.0" prefHeight="46.0" prefWidth="52.0" />
+               <Button fx:id="txt_profB" layoutX="341.0" layoutY="117.0" mnemonicParsing="false" onAction="#txt_prof" opacity="0.0" prefHeight="46.0" prefWidth="52.0" />
+               <Button fx:id="txt_matB" layoutX="341.0" layoutY="168.0" mnemonicParsing="false" onAction="#txt_mat" opacity="0.0" prefHeight="46.0" prefWidth="52.0" />
+               <Button fx:id="txt_dispB" layoutX="341.0" layoutY="217.0" mnemonicParsing="false" onAction="#txt_disp" opacity="0.0" prefHeight="46.0" prefWidth="52.0" />
+               <Button fx:id="txt_pondB" layoutX="341.0" layoutY="268.0" mnemonicParsing="false" onAction="#txt_pond" opacity="0.0" prefHeight="46.0" prefWidth="52.0" />
+               <Button fx:id="ver_profB" layoutX="535.0" layoutY="118.0" mnemonicParsing="false" onAction="#ver_prof" opacity="0.0" prefHeight="46.0" prefWidth="52.0" visible="false" />
+               <Button fx:id="ver_matB" layoutX="535.0" layoutY="171.0" mnemonicParsing="false" onAction="#ver_mat" opacity="0.0" prefHeight="46.0" prefWidth="52.0" visible="false" />
+               <Button fx:id="ver_dispB" layoutX="535.0" layoutY="220.0" mnemonicParsing="false" onAction="#ver_disp" opacity="0.0" prefHeight="46.0" prefWidth="52.0" visible="false" />
+               <Button fx:id="ver_pondB" layoutX="535.0" layoutY="271.0" mnemonicParsing="false" onAction="#ver_pond" opacity="0.0" prefHeight="46.0" prefWidth="52.0" visible="false" />
+               <Label alignment="CENTER" contentDisplay="BOTTOM" layoutX="532.0" layoutY="85.0" prefHeight="21.0" prefWidth="59.0" text="Ver">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Label>
+               <Label fx:id="estado_prof" alignment="CENTER" layoutX="440.0" layoutY="125.0" prefHeight="30.0" prefWidth="73.0" text="Sin cargar" />
+               <Label fx:id="estado_mat" alignment="CENTER" layoutX="442.0" layoutY="175.0" prefHeight="30.0" prefWidth="73.0" text="Sin cargar" />
+               <Label fx:id="estado_disp" alignment="CENTER" layoutX="442.0" layoutY="225.0" prefHeight="30.0" prefWidth="73.0" text="Sin cargar" />
+               <Label fx:id="estado_pond" alignment="CENTER" layoutX="440.0" layoutY="276.0" prefHeight="30.0" prefWidth="73.0" text="Sin cargar" />
+            </children></AnchorPane>
+        </Scene>
+
+    </scene>
+</Stage>
